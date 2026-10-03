@@ -1,0 +1,13 @@
+{
+  "buildCommand": "node scripts/run-framework.mjs build",
+  "installCommand": "npm ci",
+  "framework": "custom",
+  "regions": ["iad1"],
+  "functions": {
+    "dist/server/index.js": {
+      "maxDuration": 30
+    }
+  },
+  "outputDirectory": "dist/client",
+  "developmentCommand": "npm run dev"
+}
